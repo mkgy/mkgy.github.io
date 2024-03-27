@@ -16,6 +16,9 @@ function App() {
           </button>
         </p>
         <p>
+          Hi Michael !!!!!!!!!!
+        </p>
+        <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
         <p>
@@ -35,7 +38,6 @@ function App() {
             rel="noopener noreferrer"
           >
             Vite Docs
-            Michael
           </a>
         </p>
       </header>
