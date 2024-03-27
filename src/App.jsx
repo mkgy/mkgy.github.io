@@ -35,6 +35,7 @@ function App() {
             rel="noopener noreferrer"
           >
             Vite Docs
+            Michael
           </a>
         </p>
       </header>
