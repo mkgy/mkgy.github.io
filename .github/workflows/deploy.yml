@@ -5,18 +5,17 @@ on:
     branches:
       - main
 
-# CI
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
 
-    # ------------------------
+
     steps:
       - name: Checkout repo
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Setup Node
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
           check-latest: true
@@ -33,9 +32,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-    # ------------------------
-
-
 
     # steps:
     #   - name: Checkout repo
@@ -45,7 +41,7 @@ jobs:
     #     uses: actions/setup-node@v4
 
     #   - name: Install dependencies
-    #     uses: bahmutov/npm-install@v1.10.1
+    #     uses: bahmutov/npm-install@v1
 
     #   - name: Build project
     #     run: npm run build
@@ -56,7 +52,6 @@ jobs:
     #       name: production-files
     #       path: ./dist
 
-# CD
   deploy:
     name: Deploy
     needs: build
